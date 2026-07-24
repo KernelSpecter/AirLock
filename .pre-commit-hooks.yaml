@@ -1,0 +1,6 @@
+- id: airlock
+  name: airlock — block secrets & PII from being committed
+  description: Scan staged text files for secrets and PII; fail the commit if any are found.
+  entry: airlock --report
+  language: python
+  types: [text]
