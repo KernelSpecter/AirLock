@@ -50,12 +50,24 @@ Notice what *didn't* get touched: `DEBUG = True`, `MAX_RETRIES = 3`. A redactor 
 
 ## Install
 
+Install straight from GitHub (not on PyPI yet):
+
 ```bash
-pip install airlock                 # core CLI, zero dependencies
-pip install "airlock[clipboard]"    # + live clipboard guard
+# core CLI — zero dependencies
+pip install "git+https://github.com/KernelSpecter/AirLock.git"
+
+# ...or with the live clipboard guard
+pip install "airlock[clipboard] @ git+https://github.com/KernelSpecter/AirLock.git"
 ```
 
-> Prefer isolation? `pipx install airlock`.
+Both put an `airlock` command on your PATH. Prefer isolation? Swap `pip install` for `pipx install`.
+
+Or just clone and run — no install needed:
+
+```bash
+git clone https://github.com/KernelSpecter/AirLock.git && cd AirLock
+python -m airlock.cli --help
+```
 
 ## Use it
 
