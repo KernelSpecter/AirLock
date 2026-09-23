@@ -57,10 +57,14 @@ Install straight from GitHub (not on PyPI yet):
 pip install "git+https://github.com/KernelSpecter/AirLock.git"
 
 # ...or with the live clipboard guard
-pip install "airlock[clipboard] @ git+https://github.com/KernelSpecter/AirLock.git"
+pip install "airlock-redact[clipboard] @ git+https://github.com/KernelSpecter/AirLock.git"
 ```
 
 Both put an `airlock` command on your PATH. Prefer isolation? Swap `pip install` for `pipx install`.
+
+The package itself is called `airlock-redact`, because `airlock` on PyPI is an
+unrelated project. So `pip install airlock` gets you the wrong thing, and
+`pip uninstall airlock-redact` is how you remove this one.
 
 Or just clone and run — no install needed:
 

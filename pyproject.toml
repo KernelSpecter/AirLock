@@ -3,7 +3,7 @@ requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "airlock"
+name = "airlock-redact"
 version = "0.1.0"
 description = "The airlock between your terminal and the AI — redact secrets & PII before they leak into an LLM."
 readme = "README.md"
